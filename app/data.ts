@@ -3,6 +3,30 @@ import CloudIcon from '@mui/icons-material/Cloud';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import CurtainsClosedIcon from '@mui/icons-material/CurtainsClosed';
 import portImage from "@/app/assets/imagePort.jpg"
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
+import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
+import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
+
+
+
+export const benefit =[
+    {
+        label:"quality assurance",
+        icon:SettingsSuggestIcon
+    },
+    {
+        label:"Full 24/7",
+        icon:HeadsetMicIcon
+    },
+    {
+        label:"affordable rates",
+        icon:CurrencyExchangeIcon
+    },
+    {
+        label:"affordable rates",
+        icon:CurrencyExchangeIcon
+    }
+]
 
 
 
@@ -60,6 +84,54 @@ export const portfolio =[
     {
         image:portImage,
         type:"business",
+        title:"Project Sentinel",
+        text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
+    },
+    {
+        image:portImage,
+        type:"technology",
+        title:"Project Phoenix",
+        text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
+    },
+    {
+        image:portImage,
+        type:"digital",
+        title:"Project Sentinel",
+        text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
+    },
+    {
+        image:portImage,
+        type:"business",
+        title:"Project Phoenix",
+        text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
+    },
+    {
+        image:portImage,
+        type:"design",
+        title:"Project Sentinel",
+        text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
+    },
+    {
+        image:portImage,
+        type:"business",
+        title:"Project Phoenix",
+        text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
+    },
+    {
+        image:portImage,
+        type:"design",
+        title:"Project Sentinel",
+        text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
+    },
+    {
+        image:portImage,
+        type:"business",
+        title:"Project Phoenix",
+        text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
+    },
+    {
+        image:portImage,
+        type:"digital",
         title:"Project Sentinel",
         text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
     }

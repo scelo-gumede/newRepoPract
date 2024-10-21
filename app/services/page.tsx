@@ -1,11 +1,15 @@
 
-
+import Benefits from "../components/Benefits"
+import Details from "../components/Details"
+import Services from "../components/Services"
 
 export default function Service(){
 
     return(
-        <div>
-            The service page
-        </div>
+        <main>
+            <Services />
+            <Benefits />
+            <Details />
+        </main>
     )
 }

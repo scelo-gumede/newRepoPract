@@ -15,7 +15,7 @@ export default function PortFolioCart(props:PortFolioCartProps){
     return (
         <article className="rounded-lg shadow-lg overflow-hidden">
             <div>
-                <Image alt="portfolio image" className="w-full h-full object-cover" width={500} height={600} src={image} />
+                <Image alt="portfolio image" className="w-full hover:scale-110 duration-300 transform transition h-full object-cover" width={500} height={600} src={image} />
             </div>
             <div className=" p-10 space-y-5">
                 <div className="flex items-center justify-between space-y-5">

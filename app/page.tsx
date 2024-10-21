@@ -1,7 +1,12 @@
 import AboutUsHome from "./components/AboutUsHome"
+import Details from "./components/Details"
+import Form from "./components/Form"
 import Hero from "./components/Hero"
 import ItSolution from "./components/ItSolution"
 import OurPortfolio from "./components/OurPortfolio"
+import Recognition from "./components/Recognitions"
+import Team from "./components/Team"
+
 
 export default function Home(){
 
@@ -11,6 +16,10 @@ export default function Home(){
       <AboutUsHome />
       <ItSolution />
       <OurPortfolio />
+      <Recognition />
+      <Team />
+      <Form />
+      <Details />
     </main>
   )
 }

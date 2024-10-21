@@ -5,7 +5,7 @@ import Button from "./Button"
 export default function AboutUsHome(){
 
     return (
-        <section className=" gradientAboutHome  text-black py-16 px-16 lg:px-32 lg:flex  ">
+        <section className=" gradientAboutHome  text-black py-20 px-16 lg:px-32 lg:flex  ">
 
             <div className="space-y-10  flex flex-col justify-center lg:w-[50vw]">
                 <p className="text-6xl font-bold tracking-wider leading-snug ">ABOUT COMPANY</p>

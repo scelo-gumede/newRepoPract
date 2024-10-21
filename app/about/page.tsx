@@ -1,10 +1,13 @@
+import AboutUsHome from "../components/AboutUsHome";
+import Team from "../components/Team";
 
 
 export default function About(){
 
     return (
-        <div>
-            The about status 
-        </div>
+        <main>
+            <AboutUsHome />
+            <Team />
+        </main>
     )
 }
