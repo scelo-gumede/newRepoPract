@@ -1,6 +1,6 @@
 
 import "./globals.css";
-
+import Navbar from "./components/Navbar";
 
 
 export default function RootLayout({
@@ -10,7 +10,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <head>
+      <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+
+      </head>
+      <body className="">
+        <Navbar />
         {children}
       </body>
     </html>
