@@ -6,12 +6,16 @@ import Button from "./Button"
 import { usePathname } from "next/navigation"
 import clsx from "clsx"
 import MenuIcon from '@mui/icons-material/Menu';
-
+import { useState } from "react"
+import CancelIcon from '@mui/icons-material/Cancel';
 
 export default function(){
-
     const pathname = usePathname()
+    const[show,setShow]=useState(false)
 
+    const handleShow = ()=>{
+        setShow(!show)
+    }
 
     return (
         <nav className=" text-textColor py-4 bg-grey w-full  ">
@@ -23,7 +27,7 @@ export default function(){
                 <div className="space-x-5 items-center hidden lg:flex text-xl ">
                     {links.map((link,i)=>{
                         return (
-                            <Link className={clsx({
+                            <Link  className={clsx({
                                 "text-green":pathname==link.url
                             })} key={i} href={link.url}>{link.label}</Link>
                         )
@@ -31,7 +35,21 @@ export default function(){
                     <Button text="Contact Us" bg="white" />
                 </div>
 
-                <MenuIcon className="lg:hidden" fontSize="large" />
+                <MenuIcon onClick={()=>handleShow()} className="lg:hidden cursor-pointer" fontSize="large" />
+
+                <section className={clsx(" text-xl transition flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full space-y-5 bg-white ",{
+                    "scale-100":show===true,
+                    "scale-0":show===false,
+                })}>
+                    <CancelIcon className="absolute right-4 top-4 " fontSize="large" onClick={()=> handleShow()} />
+                    {links.map((link,i)=>{
+                        return (
+                            <Link onClick={()=> handleShow()} className={clsx(" text-4xl ",{
+                                "text-green":pathname==link.url
+                            })} key={i} href={link.url}>{link.label}</Link>
+                        )
+                    })}
+                </section>
             </section>
         </nav>
     )
