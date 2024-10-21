@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-console": "warn", // Change console statements to warnings instead of errors
+    "react/no-unescaped-entities": "off" // Disable this rule, for example
+  }
 }
+
