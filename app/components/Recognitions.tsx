@@ -1,4 +1,4 @@
-import pic from "@/app/assets/imagePort.jpg"
+
 
 
 const achievements =[

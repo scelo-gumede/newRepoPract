@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react"
 import CancelIcon from '@mui/icons-material/Cancel';
 
-export default function(){
+export default function Navbar(){
     const pathname = usePathname()
     const[show,setShow]=useState(false)
 

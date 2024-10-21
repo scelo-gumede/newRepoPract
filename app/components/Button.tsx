@@ -6,7 +6,7 @@ interface ButtonProps{
 }
 
 
-export default function(props:ButtonProps){
+export default function Button(props:ButtonProps){
 
     const{text,bg}=props
 
