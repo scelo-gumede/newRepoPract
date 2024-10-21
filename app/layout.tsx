@@ -19,7 +19,9 @@ export default function RootLayout({
       </head>
       <body className="">
         <Navbar />
+        <div className="">
         {children}
+        </div>
       </body>
     </html>
   );

@@ -13,6 +13,7 @@ const config: Config = {
         green:"#6dbbaa",
         textColor:"#afb1b6",
         textColor2:"#2c2d2f",
+        whiteColor:"#f0f2f4"
       },
     },
   },

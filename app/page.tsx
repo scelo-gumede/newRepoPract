@@ -1,10 +1,16 @@
-
+import AboutUsHome from "./components/AboutUsHome"
+import Hero from "./components/Hero"
+import ItSolution from "./components/ItSolution"
+import OurPortfolio from "./components/OurPortfolio"
 
 export default function Home(){
 
   return (
-    <section>
-      <p>The home page</p>
-    </section>
+    <main>
+      <Hero />
+      <AboutUsHome />
+      <ItSolution />
+      <OurPortfolio />
+    </main>
   )
 }

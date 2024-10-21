@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 
-body {
- 
+.gradientHero {
+  background-image: linear-gradient(
+    to left,
+    #6dbbaa ,
+    #1b1c1e 
+    
+  );
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.gradientAboutHome{
+  background-image: linear-gradient(
+    to top right,
+    #6dbbaa 20%,
+    white 20%
+    
+  );
 }
