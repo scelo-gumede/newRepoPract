@@ -6,7 +6,7 @@ import portImage from "@/app/assets/imagePort.jpg"
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
-
+import pic from "@/app/assets/imagePort.jpg"
 
 
 export const benefit =[
@@ -48,6 +48,44 @@ export const links =[
         url:"/services"
     }
 ]
+
+
+export const teamMembers = [
+    {
+        name:"John Smith",
+        occupation:"manager",
+        image:pic
+    },
+    {
+        name:"Thomas Gumede",
+        occupation:"manager",
+        image:pic
+    },
+    {
+        name:"Mathews Gumede",
+        occupation:"manager",
+        image:pic
+    }
+]
+
+export const achievements =[
+    {
+     value:"50+",
+     title:"clients satisfied"
+    },
+    {
+     value:"200K+",
+     title:"awards won"
+    },
+    {
+     value:"30+",
+     title:"projects delivered"
+    },
+    {
+     value:"20+",
+     title:"team members"
+    }
+ ]
 
 
 export const skills = [
