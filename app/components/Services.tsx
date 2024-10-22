@@ -10,7 +10,9 @@ export default function Services(){
                 skills.map((item,i)=>{
                     return (
                         <div className=" flex gap-2 md:gap-1 " key={i}>
-                            <div className="w-[20%]">{<item.icon fontSize="large" className="text-green"/>}</div>
+                            <div className=" ">
+                            <div className="w-[20%]">{<item.icon width={50} height={50}  className="text-green"/>}</div>
+                            </div>
                             <div className="flex flex-col ">
                                 <p className="text-2xl text-textColor2">{item.title}</p>
                                 <p className="text-textColor2">{item.text}</p>

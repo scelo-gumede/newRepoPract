@@ -5,7 +5,7 @@ import { teamMembers } from "../data"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import * as motion from "framer-motion/client"
 
 
 interface EachTeamMemberProps{

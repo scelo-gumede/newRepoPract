@@ -4,6 +4,10 @@ import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import EmailIcon from '@mui/icons-material/Email';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
+import PhoneIcon from "@/app/assets/phone.svg"
+import Email from "@/app/assets/email.svg"
+import Location from "@/app/assets/location.svg"
+
 export default function Details(){
 
 
@@ -21,9 +25,10 @@ export default function Details(){
                 </div>
             </div>
             <div className="text-grey space-y-2 lg:flex lg:flex-col lg:justify-end lg:w-1/3">
-                <p className="font-bold text-2xl"><span><AddIcCallIcon fontSize="medium" className="text-green mr-5"  /></span>061 012 1251</p>
-                <p className="font-bold text-2xl"><EmailIcon fontSize="medium" className="text-green mr-5"/> info@email.com</p>
-                <div className="flex"><FmdGoodIcon fontSize="medium" className="text-green mr-5" />
+                <p className="font-bold flex text-2xl"><span><PhoneIcon  width={30} height={30} className=" mr-5"  /></span>061 012 1251</p>
+                <p className="font-bold flex  text-2xl">
+                <Email width={30} height={30} className="mr-5" /> info@email.com</p>
+                <div className="flex"><Location width={30} height={30} className="text-green mr-5" />
                 <address className="">
                     CC3987 Grammar rd<br />
                     Mayville <br />

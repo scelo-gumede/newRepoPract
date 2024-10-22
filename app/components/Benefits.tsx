@@ -16,7 +16,7 @@ export default function Benefits() {
                     return (
                         <div key={i} className="flex  gap-10 justify-center ">
                             <p>
-                                {<item.icon className="text-green" fontSize="large" />}
+                                {<item.icon className="text-green" width={40} height={40} />}
                             </p>
                             <p>{item.label}</p>
                         </div>
