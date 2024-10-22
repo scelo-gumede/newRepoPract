@@ -23,13 +23,13 @@ export default function Team(){
         <section className="px-8 md:px-16 py-24  space-y-10 bg-whiteColor" >
             <div>
                 <p className="text-4xl font-bold text-center md:text-left leading-snug">MEET OUR EXPERTS</p>
-                <div className="w-[20vw] mx-auto md:mx-0 lg:w-[10vw] h-1 bg-green rounded-md   mb-2"></div>
+                <div className="w-[20vw] mx-auto md:mx-0 lg:w-[10vw] h-1 bg-green rounded-md   mb-8"></div>
                 <p className="text-left text-sm text-textColor2">we are proud to have a team of highly skilled professionals who are <br />
                 passionate about technology and dedicated to delivering good results.
 
                 </p>
             </div>
-            <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid  grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((item,i)=>{ 
                 
 

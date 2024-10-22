@@ -13,7 +13,7 @@ export default function Services(){
                             <div className="w-[20%]">{<item.icon fontSize="large" className="text-green"/>}</div>
                             <div className="flex flex-col ">
                                 <p className="text-2xl text-textColor2">{item.title}</p>
-                                <p className="text-textColor">{item.text}</p>
+                                <p className="text-textColor2">{item.text}</p>
                                 </div>
                             </div>
                     )

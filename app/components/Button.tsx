@@ -13,7 +13,7 @@ export default function Button(props:ButtonProps){
     const{text,bg}=props
 
     return (
-        <button style={{"background":props.color ?"#6dbbaa" : "white","color":props.color ?"black" : ""}} className={clsx("px-4 py-2 font-medium text-textColor2 rounded-2xl",{
+        <button style={{"background":props.color ?"#6dbbaa" : "white","color":props.color ?"black" : ""}} className={clsx("px-4 py-2 font-medium text-textColor2 rounded-2xl border-grey border-2 border-solid",{
             "bg-grey text-white":bg == "grey",
             "bg-white":bg == "white",
         })}>
