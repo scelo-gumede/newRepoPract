@@ -32,3 +32,12 @@
       display: block !important; /* Show on smaller screens */
   }
 }
+
+
+.buttonGradient{
+  background-image: radial-gradient(
+    circle,
+    #f0f2f4 10%,
+    #6dbbaa
+  );
+}

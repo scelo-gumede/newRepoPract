@@ -15,7 +15,7 @@ export const benefit =[
         icon:SettingsSuggestIcon
     },
     {
-        label:"Full 24/7",
+        label:"Full 24/7 security",
         icon:HeadsetMicIcon
     },
     {
