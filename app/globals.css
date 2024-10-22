@@ -20,3 +20,15 @@
     
   );
 }
+
+
+/* styles.css or your global stylesheet */
+.custom-menu-icon {
+  display: none !important; /* Hide by default */
+}
+
+@media (max-width: 1024px) { /* Adjust this value for your specific breakpoint */
+  .custom-menu-icon {
+      display: block !important; /* Show on smaller screens */
+  }
+}
