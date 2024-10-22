@@ -9,8 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useAppDispatch } from "../hooks/store"
 import { showNav } from "../store/slices/NavBarSlice"
 
+interface NavBarProps{
+    color:boolean
+}
 
-export default function Navbar(){
+
+export default function Navbar(props:NavBarProps){
     const pathname = usePathname()
     const dispatch = useAppDispatch()
 
@@ -28,11 +32,12 @@ export default function Navbar(){
                     {links.map((link,i)=>{
                         return (
                             <Link  className={clsx({
-                                "text-green":pathname==link.url
+                                "text-green":pathname==link.url,
+                                "text-white":props.color==true
                             })} key={i} href={link.url}>{link.label}</Link>
                         )
                     })}
-                    <Button text="Contact Us" bg="white" />
+                    <Button text="Contact Us" bg="white" color={props.color} />
                 </div>
 
                 

@@ -54,13 +54,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <SmallNavBar />
             <header className="">
               <div ref={position} className="z-10 h-full">
-                  <Navbar />
+                  <Navbar color={false}/>
               </div>
 
               <div className={clsx("navbar z-10 w-full fixed", {
                   show: showSecondaryNavbar
               })}>
-                  <Navbar />
+                  <Navbar color={true} />
               </div>
               </header> 
               <div>
