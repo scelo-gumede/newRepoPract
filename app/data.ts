@@ -1,11 +1,5 @@
-import WysiwygIcon from '@mui/icons-material/Wysiwyg';
-import CloudIcon from '@mui/icons-material/Cloud';
-import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
-import CurtainsClosedIcon from '@mui/icons-material/CurtainsClosed';
+
 import portImage from "@/app/assets/imagePort.jpg"
-import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
-import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
-import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 import pic from "@/app/assets/imagePort.jpg"
 import AI from "@/app/assets/AI.svg"
 import cloud from "@/app/assets/cloud-computing.svg"
@@ -14,6 +8,8 @@ import software from "@/app/assets/software-dev.svg"
 import clock from "@/app/assets/clock.svg"
 import settings from "@/app/assets/settings.svg"
 import dollar from "@/app/assets/dollar.svg"
+
+
 
 export const benefit =[
     {
