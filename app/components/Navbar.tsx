@@ -35,7 +35,9 @@ export default function Navbar(){
                     <Button text="Contact Us" bg="white" />
                 </div>
 
-                <MenuIcon onClick={()=>handleShow()} className="lg:hidden cursor-pointer" fontSize="large" />
+                
+                <MenuIcon onClick={handleShow} className="lg:hidden cursor-pointer" fontSize="large" />
+
 
                 <section className={clsx(" text-xl transition flex flex-col justify-center items-center absolute left-0 top-0 w-full h-full space-y-5 bg-white ",{
                     "scale-100":show===true,

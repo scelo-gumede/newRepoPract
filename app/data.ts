@@ -46,10 +46,6 @@ export const links =[
     {
         label:"Services",
         url:"/services"
-    },
-    {
-        label:"Services",
-        url:"/services"
     }
 ]
 
