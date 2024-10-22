@@ -30,20 +30,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }, []);
 
   return (
-      <html lang="en">
+      <html style={{scrollBehavior:"smooth"}} lang="en">
           <head>
               <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
               <style>
                   {`
                       .navbar {
-                          transition: transform 0.3s ease, opacity 0.3s ease;
+                          transition: transform 1s ease, opacity 0.3s ease;
                           transform: translateY(-100%);
                           opacity: 0;
                       }
                       .navbar.show {
                           transform: translateY(-50);
-                          opacity: 1;
+                          opacity: 0.7;
                       }
+                      
                   `}
               </style>
           </head>

@@ -6,14 +6,12 @@ import Button from "./Button"
 import { usePathname } from "next/navigation"
 import clsx from "clsx"
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from "react"
 import { useAppDispatch } from "../hooks/store"
 import { showNav } from "../store/slices/NavBarSlice"
 
 
 export default function Navbar(){
     const pathname = usePathname()
-    const[show,setShow]=useState(false)
     const dispatch = useAppDispatch()
 
 
