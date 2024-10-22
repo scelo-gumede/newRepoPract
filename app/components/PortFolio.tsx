@@ -26,7 +26,7 @@ export default function PortFolio(){
     }
 
     return (
-        <section className="bg-whiteColor px-16 py-20 ">
+        <section className="bg-whiteColor px-8 md:px-16 py-20 ">
             <p className="textColor text-4xl text-center font-bold">Categories</p>
             <div className="w-[20vw] lg:w-[10vw] h-1 bg-green rounded-md mx-auto  mb-10"></div>
             <div className="grid grid-cols-2 md:grid-cols-1 md:flex gap-5  justify-center p-10 md:space-x-4  mx-auto ">

@@ -20,10 +20,10 @@ interface EachTeamMemberProps{
 export default function Team(){
 
     return (
-        <section className="px-16 py-24  space-y-10 bg-whiteColor" >
+        <section className="px-8 md:px-16 py-24  space-y-10 bg-whiteColor" >
             <div>
-                <p className="text-4xl font-bold  leading-snug">MEET OUR EXPERTS</p>
-                <div className="w-[20vw] lg:w-[10vw] h-1 bg-green rounded-md   mb-2"></div>
+                <p className="text-4xl font-bold text-center md:text-left leading-snug">MEET OUR EXPERTS</p>
+                <div className="w-[20vw] mx-auto md:mx-0 lg:w-[10vw] h-1 bg-green rounded-md   mb-2"></div>
                 <p className="text-left text-sm text-textColor2">we are proud to have a team of highly skilled professionals who are <br />
                 passionate about technology and dedicated to delivering good results.
 

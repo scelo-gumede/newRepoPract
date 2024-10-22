@@ -5,7 +5,7 @@ import { skills } from "../data"
 export default function Services(){
 
     return (
-        <section className="bg-whiteColor grid lg px-16 py-20 lg:grid-cols-2 gap-10 ">
+        <section className="bg-whiteColor grid px-8 md:px-16 py-20 lg:grid-cols-2 gap-10 ">
             {
                 skills.map((item,i)=>{
                     return (
