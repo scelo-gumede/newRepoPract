@@ -4,7 +4,7 @@ import { skills } from "../data"
 export default function ItSolution(){
 
     return (
-        <section className="lg:flex p-16 bg-whiteColor gap-10 space-y-10 ">
+        <section className="lg:flex px-10 md:p-16 bg-whiteColor gap-10 space-y-10 ">
             <div className="lg:w-[50vw] space-y-10 ">
                 <p className="text-4xl font-bold  leading-snug ">POWERFUL IT SOLUTIONS FOR YOUR BUSINESS SUCCESS</p>
                 <p className="text-textColor2 text-sm">we specialize in delivering powerful IT solutions that drive your business success. Our team of experts is dedicated to providing innovative technology solutions tailored to your unique needs. From strategic planning to implementation and ongoing support, we ensure that your IT infrastructure is robust, secure, and optimized for maximum performance.</p>
