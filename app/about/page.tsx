@@ -8,7 +8,7 @@ export default function About(){
     return (
         <main>
             <AboutUsHome />
-            <Team />
+            <Team value={true} />
             <Details />
         </main>
     )

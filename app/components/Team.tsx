@@ -3,20 +3,23 @@ import { teamMembers } from "../data"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import Link from "next/link";
 
 
 interface EachTeamMemberProps{
     name:string,
     occupation:string,
     Images:React.FC<React.SVGProps<SVGSVGElement>>,
-    text:string
+    text:string,
+    value:boolean
     
 }
 
+interface TeamProps{
+    value:boolean
+}
 
-
-export default function Team(){
+export default function Team(props:TeamProps){
 
     return (
         <section className="px-8 md:px-16 py-24  space-y-10 bg-whiteColor" >
@@ -28,14 +31,27 @@ export default function Team(){
 
                 </p>
             </div>
-            <div className="grid  grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {teamMembers.map((item,i)=>{ 
+            <div className="grid  grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+            { props.value ?
+                    ( teamMembers.map((item,i)=>{ 
                 
 
-                return (
-                    <EachTeamMember  {...item}  key={i}/>
+                        return (
+                            <EachTeamMember value={props.value} {...item}  key={i}/>
+                        )
+                    }))
+                :
+                
+                (
+                    teamMembers.slice(0,4).map((item,i)=>{ 
+                
+
+                        return (
+                            <EachTeamMember value={props.value} {...item}  key={i}/>
+                        )
+                    })
                 )
-            })}
+        }
             </div>
         </section>
     )
@@ -45,12 +61,20 @@ export default function Team(){
 
 function EachTeamMember(props:EachTeamMemberProps){
 
-    const{occupation,name,Images,text}=props
+    const{occupation,name,Images,text,value}=props
     return(
         <article  className="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div className=" hover:scale-110 rounded-full bg-green overflow-hidden duration-500 transition-all">
+
+            {
+                value? <div className=" hover:scale-110 rounded-full bg-green overflow-hidden duration-500 transition-all">
+                <Images width="100%" height="auto" />
+            </div>:
+                <Link href="/about">
+                    <div className=" hover:scale-110 rounded-full bg-green overflow-hidden duration-500 transition-all">
                 <Images width="100%" height="auto" />
             </div>
+                </Link>
+            }
 
             <div className="p-10 space-y-2">
 
@@ -64,7 +88,7 @@ function EachTeamMember(props:EachTeamMemberProps){
                 </div>
                 <p className="text-sm font-bold">{occupation}</p>
 
-                <p className="text-sm">{text}</p>
+                <p className="text-sm">{value ? <span>{text}</span> : <span>{`${text.slice(0,100)}...`}</span>}</p>
             </div>
         </article>
     )

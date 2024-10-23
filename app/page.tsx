@@ -17,7 +17,7 @@ export default function Home(){
       <ItSolution />
       <OurPortfolio />
       <Recognition />
-      <Team />
+      <Team value={false}/>
       <Form />
       <Details />
     </main>
