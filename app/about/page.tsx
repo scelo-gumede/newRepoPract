@@ -1,4 +1,5 @@
 import AboutUsHome from "../components/AboutUsHome";
+import Details from "../components/Details";
 import Team from "../components/Team";
 
 
@@ -8,6 +9,7 @@ export default function About(){
         <main>
             <AboutUsHome />
             <Team />
+            <Details />
         </main>
     )
 }

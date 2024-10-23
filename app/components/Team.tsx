@@ -1,6 +1,4 @@
 
-import Image from "next/image"
-import { StaticImageData } from "next/image"
 import { teamMembers } from "../data"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
@@ -11,7 +9,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 interface EachTeamMemberProps{
     name:string,
     occupation:string,
-    image:StaticImageData,
+    Images:React.FC<React.SVGProps<SVGSVGElement>>,
+    text:string
     
 }
 
@@ -46,23 +45,26 @@ export default function Team(){
 
 function EachTeamMember(props:EachTeamMemberProps){
 
-    const{occupation,name,image}=props
+    const{occupation,name,Images,text}=props
     return(
         <article  className="shadow-lg rounded-lg bg-white overflow-hidden">
-            <div className=" hover:scale-110 duration-500 transition-all">
-                <Image src={image} className="w-full  h-full object-cover" alt="person image" width={300} height={400} />
+            <div className=" hover:scale-110 rounded-full bg-green overflow-hidden duration-500 transition-all">
+                <Images width="100%" height="auto" />
             </div>
 
             <div className="p-10 space-y-2">
+
                 <div className="flex items-center justify-between">
                 <p className="text-2xl text-grey">{name}</p>
                 <div className="flex space-x-2 text-textColor">
-                    <XIcon fontSize="small"  className="hover:text-green cursor-pointer transition scale-125  rounded-md" />
-                    <FacebookIcon fontSize="small" className="hover:text-green cursor-pointer transition scale-125  rounded-md"/>
-                    <GitHubIcon fontSize="small" className="hover:text-green cursor-pointer transition scale-125  rounded-md"/>
+                    <XIcon fontSize="small"  className="hover:text-green text-black cursor-pointer transition scale-125  rounded-md" />
+                    <FacebookIcon fontSize="small" className="hover:text-green text-blue-800 cursor-pointer transition scale-125  rounded-md"/>
+                    <GitHubIcon fontSize="small" className="hover:text-green text-red-800 cursor-pointer transition scale-125  rounded-md"/>
                 </div>
                 </div>
-                <p className="text-sm">{occupation}</p>
+                <p className="text-sm font-bold">{occupation}</p>
+
+                <p className="text-sm">{text}</p>
             </div>
         </article>
     )

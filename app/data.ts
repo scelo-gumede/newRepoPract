@@ -8,6 +8,20 @@ import software from "@/app/assets/software-dev.svg"
 import clock from "@/app/assets/clock.svg"
 import settings from "@/app/assets/settings.svg"
 import dollar from "@/app/assets/dollar.svg"
+import ITInfrastructure from "@/app/assets/IT-infrastructure.png"
+import cyber from "@/app/assets/cyber.png"
+import store from "@/app/assets/store.png"
+import store2 from "@/app/assets/store2.png"
+import store3 from "@/app/assets/store3.png"
+import real1 from "@/app/assets/real1.png"
+import real2 from "@/app/assets/real2.png"
+import real3 from "@/app/assets/real3.png"
+import design from "@/app/assets/design.png"
+import design2 from "@/app/assets/design2.png"
+import design3 from "@/app/assets/design3.png"
+import Amanda from "@/app/assets/amanda.svg"
+import Thomas from "@/app/assets/Thomas.svg"
+import Charlse from "@/app/assets/charlse.svg"
 
 
 
@@ -55,18 +69,21 @@ export const links =[
 export const teamMembers = [
     {
         name:"John Smith",
-        occupation:"manager",
-        image:pic
+        occupation:"SEO Expect",
+        Images:Charlse,
+        text:"John Smith is an SEO expert with over a decade of experience in digital marketing. He specializes in optimizing website performance, enhancing organic search visibility, and driving targeted traffic. Known for his analytical approach, John employs the latest SEO strategies, including keyword research, on-page optimization, and link-building techniques. He’s also adept at staying ahead of industry trends and algorithm updates, making him a valuable asset for businesses looking to improve their online presence."
     },
     {
         name:"Thomas Gumede",
-        occupation:"manager",
-        image:pic
+        occupation:"Programmer",
+        Images:Thomas,
+        text:"Thomas Gumede is a talented web developer with a strong background in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and PHP, he blends technical proficiency with a flair for design. Thomas is dedicated to user experience, collaborating closely with designers to craft intuitive interfaces. Always staying current with web technologies and best practices, he ensures his projects are functional and visually appealing. His problem-solving abilities and attention to detail make him a trusted partner for businesses of all sizes."
     },
     {
-        name:"Mathews Gumede",
-        occupation:"manager",
-        image:pic
+        name:"Amanda Khali",
+        occupation:"Web Designer",
+        Images:Amanda,
+        text:"Amanda Khali is a creative web designer with a passion for crafting visually stunning and user-friendly websites. With expertise in design tools like Adobe XD and Figma, she creates intuitive layouts that enhance user experience. Amanda combines aesthetic sensibility with functionality, ensuring her designs are both beautiful and effective. She stays abreast of the latest design trends and best practices, allowing her to deliver modern and engaging web solutions. Her collaborative approach and attention to detail make her a valuable asset for any project, from startups to established brands."
     }
 ]
 
@@ -116,62 +133,68 @@ export const skills = [
 
 export const portfolio =[
     {
-        image:portImage,
-        type:"technology",
+        image:ITInfrastructure,
+        type:"Technology",
         title:"Project Phoenix",
         text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
     },
     {
-        image:portImage,
-        type:"business",
+        image:cyber,
+        type:"Technology",
         title:"Project Sentinel",
         text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
     },
     {
-        image:portImage,
-        type:"technology",
+        image:store,
+        type:"E-Commerce",
         title:"Project Phoenix",
         text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
     },
     {
-        image:portImage,
-        type:"digital",
+        image:store2,
+        type:"E-Commerce",
         title:"Project Sentinel",
         text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
     },
     {
-        image:portImage,
-        type:"business",
+        image:store3,
+        type:"E-Commerce",
         title:"Project Phoenix",
         text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
     },
     {
-        image:portImage,
-        type:"design",
+        image:design,
+        type:"Website-Design",
         title:"Project Sentinel",
         text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
     },
     {
-        image:portImage,
-        type:"business",
+        image:design2,
+        type:"Website-Design",
         title:"Project Phoenix",
         text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
     },
     {
-        image:portImage,
-        type:"design",
+        image:design3,
+        type:"Website-Design",
+        title:"Project Phoenix",
+        text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
+    },
+    {
+        image:real1,
+        type:"Real Estate",
         title:"Project Sentinel",
         text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
     },
     {
-        image:portImage,
-        type:"business",
+        image:real2,
+        type:"Real Estate",
         title:"Project Phoenix",
         text:"A strategic IT infrastructure overhaul project that revitalizes your legacy systems, modernizes your technology stack, and optimizes your network architecture to support your organization's growth and future scalability."
     },
     {
-        image:portImage,
-        type:"digital",
+        image:real3,
+        type:"Real Estate",
         title:"Project Sentinel",
         text:"A robust cybersecurity initiative focused on safeguarding your organization's sensitive data and critical assets, employing advanced threat detection, encryption, and proactive security measures to mitigate risks and protect against cyber threats."
     }

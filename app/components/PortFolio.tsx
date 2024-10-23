@@ -55,7 +55,7 @@ interface LabelProps{
 function Labels (props:LabelProps){
     
     return(
-        <p className={clsx(" text-lg p-1 md:p-2 text-center transition rounded-md md:text-2xl buttonGradient  font-bold cursor-pointer",{
+        <p className={clsx(" text-lg p-1 md:p-2 flex items-center justify-center border-2 border-solid border-grey transition rounded-md md:text-2xl buttonGradient  font-bold cursor-pointer",{
             "hover:bg-black opacity-60 border-solid border-grey border-2":props.border ==props.title
         })} onClick={()=> props.handleFilter(props.title)}>{props.title}</p>
     )

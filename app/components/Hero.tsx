@@ -1,6 +1,5 @@
 import Button from "./Button"
-import Image from "next/image"
-import pic from "@/app/assets/front-pic.png"
+import Heros from "@/app/assets/hero.svg"
 
 export default function Hero(){
 
@@ -14,13 +13,11 @@ export default function Hero(){
                 <Button text="Contact Us" bg="white" />
             </div>
 
-            <div className="lg:w-[50vw] -mt-36 md:mt-0 ">
-                 <Image
-                width={450}
-                height={700}
-                alt="the hero image"
-                src={pic}
-                className="w-full object-cover h-full"
+            <div className="lg:w-[50vw] p-10 -mt-20 md:mt-0 ">
+                 <Heros
+                width="100%"
+                height="auto"
+                
                 />
             </div>
             

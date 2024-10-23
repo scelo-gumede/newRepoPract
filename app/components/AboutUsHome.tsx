@@ -1,6 +1,7 @@
 import pic from "@/app/assets/front-pic.png"
 import Image from "next/image"
 import Button from "./Button"
+import About from "@/app/assets/monitors.svg"
 
 export default function AboutUsHome(){
 
@@ -19,12 +20,9 @@ export default function AboutUsHome(){
             </div>
 
             <div className="lg:w-[50vw]">
-                 <Image
-                width={450}
-                height={700}
-                alt="the hero image"
-                src={pic}
-                className="w-full object-cover h-full"
+                 <About
+                width="100%"
+                height="auto"
                 />
             </div>
             
