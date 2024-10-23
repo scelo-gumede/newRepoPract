@@ -1,5 +1,4 @@
-import pic from "@/app/assets/front-pic.png"
-import Image from "next/image"
+
 import Button from "./Button"
 import About from "@/app/assets/monitors.svg"
 

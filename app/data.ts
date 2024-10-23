@@ -1,6 +1,4 @@
 
-import portImage from "@/app/assets/imagePort.jpg"
-import pic from "@/app/assets/imagePort.jpg"
 import AI from "@/app/assets/AI.svg"
 import cloud from "@/app/assets/cloud-computing.svg"
 import security from "@/app/assets/security.svg"
