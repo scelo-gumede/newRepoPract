@@ -18,7 +18,7 @@ export default function AboutUsHome(){
                 </div>
             </div>
 
-            <div className="lg:w-[50vw]">
+            <div className="lg:w-[50vw] pt-8 md:pt-0">
                  <About
                 width="100%"
                 height="auto"

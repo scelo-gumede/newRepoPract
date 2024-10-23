@@ -11,7 +11,7 @@ export default function Services(){
                     return (
                         <div className=" flex gap-2 md:gap-1 " key={i}>
                             <div className=" ">
-                            <div className="w-[20%]">{<item.icon width={50} height={50}  className="text-green"/>}</div>
+                            <div className="w-[20%]">{<item.icon width={50} height="auto"  className="text-green"/>}</div>
                             </div>
                             <div className="flex flex-col ">
                                 <p className="text-2xl text-textColor2">{item.title}</p>

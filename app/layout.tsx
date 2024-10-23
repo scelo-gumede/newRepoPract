@@ -32,6 +32,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
       <html style={{scrollBehavior:"smooth"}} lang="en">
           <head>
+
+          <title>Web Development | Web Design | Digital Marketing| & SEO - Regular Pages</title>
+        <meta name="description" content="We specialize in web development, website design, SEO optimization, and digital marketing services." />
+        <meta name="keywords" content="web development, website design, SEO optimization, digital marketing, image editing" />
+        <meta name="author" content="Regular Pages" />
+        <link rel="icon" href="/logo2.svg" />
+        <link rel="canonical" href="https://www.regularpages.com/" />
+        <meta property="og:title" content="Web Development Company - Regular Pages" />
+        <meta property="og:description" content="We offer professional web development, website design,image editing ,SEO optimization, and digital marketing." />
+        <meta property="og:image" content="https://www.regularpages.com/logo2.svg" />
+        <meta property="og:url" content="https://www.regularpages.com/" />
+
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Regular Pages",
+      "url": "https://www.regularpages.com",
+      "logo": "https://www.regularpages.com/logo2.svg",  // Correct URL after moving to public
+      "sameAs": [
+        "https://www.facebook.com/yourprofile",
+        "https://www.twitter.com/yourprofile",
+        "https://www.linkedin.com/in/yourprofile"
+      ],
+      "image": "https://www.regularpages.com/logo2.svg"  // Correct URL after moving to public
+    })
+  }}
+/>
+
               <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
               <style>
                   {`
@@ -47,6 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                       
                   `}
               </style>
+
           </head>
           <body className="relative">
             <Provider store={store}>
