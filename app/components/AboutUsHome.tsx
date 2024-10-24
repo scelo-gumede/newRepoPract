@@ -2,6 +2,7 @@
 import Button from "./Button"
 import About from "@/app/assets/monitors.svg"
 
+
 export default function AboutUsHome(){
 
     return (

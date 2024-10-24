@@ -3,6 +3,7 @@ import Image from "next/image"
 import { StaticImageData } from "next/image"
 import {useState} from "react"
 import clsx from "clsx"
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 interface PortFolioCartProps{
     image:StaticImageData,
@@ -21,7 +22,7 @@ export default function PortFolioCart(props:PortFolioCartProps){
                 <Image alt="portfolio image" className="w-full hover:scale-110 duration-700   transition h-full " width={500} height={600} src={image} />
                 <div className={clsx("absolute flex justify-center items-center transition duration-300 bg-black opacity-50 left-0 scale-0  top-0 w-full h-full",{
                     "scale-100":hovered
-                })}><p className="text-white hover:scale-125 transition cursor-pointer border-2 border-red-700 p-2 border-solid">LIVE</p> </div>
+                })}><p className="text-white hover:scale-125 transition cursor-pointer flex justify-center items-center space-x-4 border-2 border-red-700 p-2 border-solid"><VisibilityIcon />  LIVE</p> </div>
             </div>
             <div className=" p-10 space-y-5">
                 <div className="flex items-center justify-between ">
