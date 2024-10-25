@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useAppDispatch } from "../hooks/store"
 import { showNav } from "../store/slices/NavBarSlice"
 import Logo from "@/app/assets/logo2.svg"
+import { showModal } from "../store/slices/Modal"
 
 interface NavBarProps{
     color:boolean
@@ -21,7 +22,7 @@ export default function Navbar(props:NavBarProps){
 
 
     
-
+    
     return (
         <nav className=" text-textColor py-4 bg-grey w-full  ">
             <section className="flex items-center max-w-7xl justify-between p-4 mx-auto">
@@ -44,7 +45,7 @@ export default function Navbar(props:NavBarProps){
                             })} key={i} href={link.url}>{link.label}</Link>
                         )
                     })}
-                    <Button text="Contact Us" bg="white" color={props.color} />
+                    <Button func={showModal} text="Contact Us" bg="white" color={props.color} />
                 </div>
 
                 

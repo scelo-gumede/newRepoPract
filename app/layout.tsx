@@ -10,9 +10,13 @@ import { store } from "@/app/store/store";
 import SmallNavBar from "./components/SmallNavBar";
 
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const position = useRef<HTMLDivElement | null>(null);
   const [showSecondaryNavbar, setShowSecondaryNavbar] = useState(false);
+  
+
+    
 
   useEffect(() => {
       const handleScroll = () => {
@@ -30,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }, []);
 
   return (
+      <Provider store={store}>
       <html style={{scrollBehavior:"smooth"}} lang="en">
           <head>
 
@@ -81,9 +86,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           </head>
           <body className="relative">
-            <Provider store={store}>
-
-              <SmallNavBar />
+                
+                <SmallNavBar />
             <header className="">
               <div ref={position} className="z-10 h-full">
                   <Navbar color={false}/>
@@ -95,13 +99,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <Navbar color={true} />
               </div>
               </header> 
+              
+              
               <div>
                   {children}
               </div>
 
               <Footer />
-              </Provider>
           </body>
       </html>
+              </Provider>
   );
 }

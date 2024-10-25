@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import showSmallNav from "@/app/store/slices/NavBarSlice"
+import modalSlice from "@/app/store/slices/Modal"
 
 export const store = configureStore({
   reducer: {
-    showNav :showSmallNav
+    showNav :showSmallNav,
+    modal:modalSlice
   },
 })
 
