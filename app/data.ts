@@ -22,12 +22,13 @@ import Thomas from "@/app/assets/Thomas.svg"
 import Charlse from "@/app/assets/charlse.svg"
 import General from "./components/form/Form1"
 import ProjectDetails from "./components/form/Form2"
-
+import Information from "./components/form/Form3"
 
 
 export const form=[
     General,
-    ProjectDetails
+    ProjectDetails,
+    Information
 ]
 
 export const benefit =[

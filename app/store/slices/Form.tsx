@@ -22,8 +22,11 @@ const formSlice = createSlice({
                 state.number -= 1; 
             }
         },
+        defaultValue:(state)=>{
+            state.number = 0
+        }
     },
 });
 
-export const { addCount, minusCount } = formSlice.actions;
+export const { addCount, minusCount,defaultValue } = formSlice.actions;
 export default formSlice.reducer;

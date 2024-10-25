@@ -13,7 +13,7 @@ import { useAppSelector } from "./hooks/store"
 
 export default function Home(){
   const modalshow= useAppSelector(state=> state.modal.value)
-  console.log(modalshow)
+  
   return (
     <main className="">
       {modalshow && (<Modal />)}
