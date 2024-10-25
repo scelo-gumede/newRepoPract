@@ -40,13 +40,13 @@ export default function ProjectDetails(){
         <div className="bg-white relative h-4/5 py-8 px-12 rounded md:w-4/5 lg:w-2/3">
             <CancelIcon onClick={handleClose} className="absolute cursor-pointer left-4 top-4" fontSize="large" />
             <p className="text-center text-2xl  font-bold">Project Details </p>
-            <div className="w-[20vw] mx-auto  mb-8 lg:w-[10vw] h-1 bg-green rounded-md "></div>
+            <div className="w-[20vw] mx-auto mt-2 mb-8 lg:w-[10vw] h-1 bg-green rounded-md "></div>
             
-            <Box className="flex flex-col text-lg font-bold space-y-10">
+            <Box className="flex flex-col  space-y-10">
 
 
-                <div className="flex  flex-col md:flex-row justify-start md:justify-between md:items-center">
-                <InputLabel>What services are you interested in</InputLabel>
+                <div className="flex text-lg font-bold  flex-col md:flex-row justify-start md:justify-between md:items-center">
+                <InputLabel className="text-lg font-bold">What services are you interested in</InputLabel>
                 <Select value={option} onChange={handleChange} >
                     <MenuItem value={"website development"}>Website Development</MenuItem>
                     <MenuItem value={"seo"}>Search Engine Optimization</MenuItem>
@@ -56,7 +56,7 @@ export default function ProjectDetails(){
                 
 
                 <div className="flex  flex-col md:flex-row justify-start md:justify-between md:items-center">
-                    <InputLabel >What is the main goal of your website</InputLabel>
+                    <InputLabel className="text-lg font-bold" >What is the main goal of your website</InputLabel>
                     <Select value={goal} onChange={handleGoal}>
                         <MenuItem value={"Sales Conversion"}>Sales Conversion</MenuItem>
                         <MenuItem value={"Brand Awareness"}>Brand Awareness</MenuItem>
@@ -69,7 +69,7 @@ export default function ProjectDetails(){
                     </div>
 
                 <div className="flex  flex-col md:flex-row justify-start md:justify-between md:items-center">
-                    <InputLabel >Do you currently have a website</InputLabel>
+                    <InputLabel className="text-lg font-bold" >Do you currently have a website</InputLabel>
                     <Select value={website} onChange={handleWebsite}>
                         <MenuItem value={"yes"}>Yes</MenuItem>
                         <MenuItem value={"no"}>No</MenuItem>
@@ -78,7 +78,7 @@ export default function ProjectDetails(){
                 </div>
 
                 <div className="flex  flex-col md:flex-row justify-start md:justify-between md:items-center ">
-                    <InputLabel>If yes , what do you like or dislike about it</InputLabel>
+                    <InputLabel className="text-lg font-bold">If yes , what do you like or dislike about it</InputLabel>
                     <Select value={dislike} onChange={handleDislike}>
                         <MenuItem value={"Slow Loading Times"}>Slow Loading Times</MenuItem>
                         <MenuItem value={"Poor Design"}>Poor Design</MenuItem>
@@ -86,6 +86,7 @@ export default function ProjectDetails(){
                         <MenuItem value={"Outdated Content"}>Outdated Content</MenuItem>
                         <MenuItem value={"Accessibility Problems"}>Accessibility Problems</MenuItem>
                         <MenuItem value={"SEO problems"}>SEO problems</MenuItem>
+                        <MenuItem value={"Other"}>Other</MenuItem>
                     </Select>
                 </div>
 

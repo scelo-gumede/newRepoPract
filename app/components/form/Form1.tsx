@@ -19,7 +19,7 @@ export default function General() {
         <div className="bg-white relative h-4/5 py-8 px-12 rounded md:w-4/5 lg:w-2/3">
             <CancelIcon onClick={handleClose} className="absolute cursor-pointer left-4 top-4" fontSize="large" />
             <p className="text-center font-bold text-2xl ">General Information</p>
-            <div className="w-[20vw] mx-auto  mb-8 lg:w-[10vw] h-1 bg-green rounded-md "></div>
+            <div className="w-[20vw] mx-auto mt-2 mb-8 lg:w-[10vw] h-1 bg-green rounded-md "></div>
             <Box className="flex flex-col space-y-10">
                 <TextField label="Name" variant="outlined" fullWidth />
                 <TextField label="Phone" variant="outlined" fullWidth />
