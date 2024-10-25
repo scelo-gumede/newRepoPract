@@ -10,6 +10,7 @@ import { useEffect,useRef } from "react"
 
 export default function Modal(){
     const currentIndex = useAppSelector(state=> state.index.number)
+    const modalshow = useAppSelector(state=> state.modal.value)
     const screenView = useRef<HTMLDivElement | null>(null);
 
     useEffect(()=>{
@@ -19,6 +20,20 @@ export default function Modal(){
         }
 
     },[currentIndex])
+
+
+
+        useEffect(() => {
+            if (modalshow) {
+                document.body.classList.add('no-scroll');
+            } else {
+                document.body.classList.remove('no-scroll');
+            }
+            // Clean up on unmount
+            return () => {
+                document.body.classList.remove('no-scroll');
+            };
+    },[])
 
         const Element = form[currentIndex]  
 
