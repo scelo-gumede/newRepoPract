@@ -33,7 +33,7 @@ export default function Modal(){
             return () => {
                 document.body.classList.remove('no-scroll');
             };
-    },[])
+    },[modalshow])
 
         const Element = form[currentIndex]  
 
