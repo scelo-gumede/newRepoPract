@@ -21,7 +21,7 @@ export default function Information(){
         dispatch(closeModal())
     }
     return (
-        <div className="bg-white relative h-4/5 py-8 px-12 rounded md:w-4/5 lg:w-2/3">
+        <div className="bg-white w-[90%] relative h-4/5 py-8 px-12 rounded md:w-4/5 lg:w-2/3">
             <CancelIcon onClick={handleClose} className="absolute cursor-pointer left-4 top-4" fontSize="large" />
             <p className="text-center font-bold text-2xl ">Additional Info</p>
             <div className="w-[20vw] mx-auto mt-2 mb-8 lg:w-[10vw] h-1 bg-green rounded-md "></div>

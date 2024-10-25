@@ -37,7 +37,7 @@ export default function ProjectDetails(){
     }
 
     return(
-        <div className="bg-white relative h-[90%] md:h-4/5 py-8 px-12 rounded md:w-4/5 lg:w-2/3">
+        <div className="bg-white relative w-[90%] h-[90%] md:h-4/5 py-8 px-12 rounded md:w-4/5 lg:w-2/3">
             <CancelIcon onClick={handleClose} className="absolute cursor-pointer left-4 top-4" fontSize="large" />
             <p className="text-center text-2xl  font-bold">Project Details </p>
             <div className="w-[20vw] mx-auto mt-2 mb-8 lg:w-[10vw] h-1 bg-green rounded-md "></div>
