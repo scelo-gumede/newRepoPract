@@ -20,8 +20,15 @@ import design3 from "@/app/assets/design3.png"
 import Amanda from "@/app/assets/amanda.svg"
 import Thomas from "@/app/assets/Thomas.svg"
 import Charlse from "@/app/assets/charlse.svg"
+import General from "./components/form/Form1"
+import ProjectDetails from "./components/form/Form2"
 
 
+
+export const form=[
+    General,
+    ProjectDetails
+]
 
 export const benefit =[
     {

@@ -16,9 +16,9 @@ export default function Home(){
   console.log(modalshow)
   return (
     <main className="">
-      <Modal />
+      {modalshow && (<Modal />)}
 
-     {/* 
+     
       <Hero />
       <AboutUsHome />
       <ItSolution />
@@ -28,7 +28,7 @@ export default function Home(){
       <Form />
       <Details />
 
-      */}
+      
     </main>
   )
 }

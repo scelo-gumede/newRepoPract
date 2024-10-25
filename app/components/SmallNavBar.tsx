@@ -8,12 +8,20 @@ import {closeNav } from "../store/slices/NavBarSlice";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "@/app/assets/logo2.svg"
+import Button from "./Button";
+import { showModal } from "../store/slices/Modal";
+
 
 export default function SmallNavBar(){
     const show = useAppSelector((state)=>state.showNav.value)
     const dispatch = useAppDispatch()
     const pathname=usePathname()
 
+
+    const handleClick = ()=>{
+        dispatch(closeNav())
+        dispatch(showModal())
+    }
 
 
     return(
@@ -39,6 +47,10 @@ export default function SmallNavBar(){
                     })} key={i} href={link.url}>{link.label}</Link>
                 )
             })}
+
+            <div className="flex justify-center">
+                <button onClick={handleClick} className="px-4 py-2 font-medium text-textColor2 rounded-2xl border-grey border-2 border-solid">Contact Us</button>
+            </div>
         </section>
     )
 }
