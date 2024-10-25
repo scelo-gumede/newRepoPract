@@ -6,7 +6,7 @@ interface ButtonProps{
     text:string,
     bg: "white" | "grey",
     color?:boolean,
-    func?: ()=>{ type: string; payload?: any }
+    func?: ()=>{ type: string; payload?: string }
 
 }
 

@@ -13,8 +13,6 @@ export default function Modal(){
     const screenView = useRef<HTMLDivElement | null>(null);
 
     useEffect(()=>{
-        const windowView = window.scrollY
-        console.log(windowView)
 
         if(screenView?.current){
             screenView?.current?.scrollIntoView({ behavior: "smooth", block: "start" });

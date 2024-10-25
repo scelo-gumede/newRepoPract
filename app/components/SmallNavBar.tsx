@@ -8,7 +8,6 @@ import {closeNav } from "../store/slices/NavBarSlice";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "@/app/assets/logo2.svg"
-import Button from "./Button";
 import { showModal } from "../store/slices/Modal";
 
 
