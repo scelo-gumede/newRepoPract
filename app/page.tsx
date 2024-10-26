@@ -34,7 +34,7 @@ useEffect(() => {
                 <meta name="keywords" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
 
 
-                <meta property="og:title" content="Regular pages" />
+                <meta property="og:title" content="RegularPages: Where Web Development Meets Innovation" />
                 <meta property="og:description" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
                 <meta property="og:url" content="https://regularpages.com" />
                 <meta property="og:type" content="website" />
@@ -43,6 +43,7 @@ useEffect(() => {
               <meta name="twitter:card" content="summary_large_image" />
               <meta name="twitter:title" content="Regular pages" />
               <meta name="twitter:description" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
+              <meta name="twitter:image" content="https://regularpages.com/opengraph-image.png" />
 
     </head>
     
