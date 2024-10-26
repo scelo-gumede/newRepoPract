@@ -8,10 +8,9 @@ import clsx from "clsx";
 import { Provider } from "react-redux";
 import { store } from "@/app/store/store";
 import SmallNavBar from "./components/SmallNavBar";
-import { metadata as pageMetadata } from "./metadata";
+import Head from "next/head";
 
 
- const metadata = pageMetadata
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const position = useRef<HTMLDivElement | null>(null);
@@ -37,7 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
       <Provider store={store}>
       <html style={{scrollBehavior:"smooth"}} lang="en">
-          
+          <Head>
+            <title></title>
+          </Head>
           <body className="relative">
                 
                 <SmallNavBar />
