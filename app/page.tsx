@@ -9,7 +9,9 @@ import OurPortfolio from "./components/OurPortfolio"
 import Recognition from "./components/Recognitions"
 import Team from "./components/Team"
 import { useAppSelector } from "./hooks/store"
+import { metadata as pageMetadata } from "@/app/metadata"
 
+const metadata = pageMetadata
 
 export default function Home(){
   const modalshow= useAppSelector(state=> state.modal.value)
