@@ -10,10 +10,10 @@ export default function Portfolio(){
     return (
         <>
         <head>
-                <title>Regular pages | portfolio</title>
+                <title>portfolio | Regular pages</title>
                 <meta name="description" content="Explore our company portfolio, featuring successful projects in web development, branding, and digital marketing. Let's create together!" />
                 <meta name="keywords" content="portfolio, web development, React, UI design, e-commerce" />
-    </head>
+        </head>
     
         <main>
             {modalshow && (<Modal />)}

@@ -36,9 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
       <Provider store={store}>
       <html style={{scrollBehavior:"smooth"}} lang="en">
-          <Head>
-            <title></title>
-          </Head>
+            
           <body className="relative">
                 
                 <SmallNavBar />
