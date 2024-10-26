@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { Provider } from "react-redux";
 import { store } from "@/app/store/store";
 import SmallNavBar from "./components/SmallNavBar";
-import Head from "next/head";
+
 
 
 
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       };
   }, []);
 
-    console.log(showSecondaryNavbar)
+    
 
   return (
       <Provider store={store}>
