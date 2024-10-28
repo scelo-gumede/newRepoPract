@@ -1,5 +1,4 @@
 
-import type { PayloadAction } from '@reduxjs/toolkit'
 import { createSlice } from "@reduxjs/toolkit";
 
 
@@ -62,15 +61,9 @@ const formSlice = createSlice({
         },
         defaultValue:(state)=>{
             state.number = 0
-        },
-        addContent:(state)=>{
-            {
-                state.number,
-                state.information
-            }
         }
     },
 });
 
-export const { addCount, minusCount,defaultValue,addContent } = formSlice.actions;
+export const { addCount, minusCount,defaultValue } = formSlice.actions;
 export default formSlice.reducer;

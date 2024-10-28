@@ -33,7 +33,6 @@ export default function Details() {
             });
             setData("");
         } catch (err) {
-            console.log(err);
             
             setError("Failed to send email. Please try again.");
         } finally {
