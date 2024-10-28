@@ -9,6 +9,12 @@ import OurPortfolio from "./components/OurPortfolio"
 import Recognition from "./components/Recognitions"
 import Team from "./components/Team"
 import Head from "next/head"
+import { Metadata } from "next"
+
+
+export const metadata: Metadata={
+  title:"Home"
+}
 
 
 export default function Home(){

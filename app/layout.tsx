@@ -7,9 +7,13 @@ import NavBarConf from "./components/NavBarConf";
 import { Metadata } from "next";
 
 
-export const metadata:Metadata={
-
-}
+export const metadata:Metadata = {
+    title: {
+      default: "Regular pages",
+      template: "$s - Regular pages",
+    },
+  };
+  
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
