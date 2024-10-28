@@ -13,7 +13,13 @@ import { Metadata } from "next"
 
 
 export const metadata: Metadata={
-  title:"Home"
+  title: {
+    default: "Regular Pages - Your Digital Marketing Experts",
+    template: "%s - Regular Pages | Transforming Your Online Presence",
+  },
+  description: "At Regular Pages, we specialize in tailored Website development,SEO and digital marketing solutions that drive traffic, increase engagement, and boost conversions. Let us help you elevate your brand and achieve your business goals in the digital landscape."
+
+  
 }
 
 

@@ -34,7 +34,6 @@ export default function Modal(){
 
         },[modalshow])
 
-        console.log(position)
 
         useEffect(() => {
             if (modalshow ) {
