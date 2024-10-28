@@ -14,6 +14,8 @@ export default function Details() {
     const [data, setData] = useState("");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
+    
+    
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setData(e.target.value);
@@ -33,8 +35,13 @@ export default function Details() {
             });
             setData("");
         } catch (err) {
-            
-            setError("Failed to send email. Please try again.");
+            if (err instanceof z.ZodError) {
+
+                setError(err.errors.map(e => e.message).join(", "));
+            } else {
+                
+                setError("Failed to send email. Please try again.");
+            }
         } finally {
             setLoading(false);
         }
