@@ -15,7 +15,7 @@ export const metadata:Metadata = {
     }
   ,
     description: "Elevate your online presence with our expert SEO and digital marketing services. We specialize in driving traffic, boosting conversions, and helping businesses thrive in the digital landscape. Partner with us to achieve measurable results and grow your brand effectively.",
-
+    keywords: "web development, UI/UX design, cybersecurity solutions, custom web applications, responsive design, e-commerce development, mobile app development, digital transformation, user-centric design, website optimization, SEO services, secure web hosting, brand identity design, software development, online marketing solutions",
     twitter:{
       card:"summary_large_image",
     },
