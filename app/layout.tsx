@@ -5,6 +5,7 @@ import Provider from "./hooks/Provider";
 import SmallNavBar from "./components/SmallNavBar";
 import NavBarConf from "./components/NavBarConf";
 import { Metadata } from "next";
+import Whatsapp from "./components/Whatsapp";
 
 
 export const metadata:Metadata = {
@@ -39,6 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <html style={{scrollBehavior:"smooth"}} lang="en">
             
           <body className="relative">
+               
+                <Whatsapp />
+                
                 <SmallNavBar />
                 <NavBarConf />
                 {children}
