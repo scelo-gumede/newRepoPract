@@ -8,7 +8,7 @@ export default function Hero(){
 
             <div className="space-y-5   lg:w-[50vw]">
                 <p className="md:text-7xl text-5xl font-bold tracking-wider leading-tight ">EMPOWERING<br /> BUSINESSES WITH <br /> TECHNOLOGY</p>
-                <p className="">Welcome to our IT company, where we are dedicated to empowering businesses with transformative technology solutions. With a passion for innovationand a deep understanding of the digital landscape, we strive to drive your organization forward toward technology.</p>
+                <p className="">Welcome to REGULAR PAGES, where we are dedicated to empowering businesses with transformative technology solutions. With a passion for innovation and a deep understanding of the digital landscape, we strive to drive your organization forward toward technology.</p>
 
                 <Button text="Contact Us" bg="white" />
             </div>

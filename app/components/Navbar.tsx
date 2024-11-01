@@ -33,7 +33,7 @@ export default function Navbar(props:NavBarProps){
                     <Logo  width="100%" height="auto"/>
                 </div>
                 </Link>
-                <p className="font-bold text-white">IT COMPANY</p>
+                <p className="font-bold text-white">REGULAR PAGES</p>
                 </div>
 
                 <div className="space-x-5 items-center hidden lg:flex text-xl ">

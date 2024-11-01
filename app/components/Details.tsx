@@ -54,8 +54,8 @@ export default function Details() {
     return (
         <section className="px-8 py-16 md:px-16 text-whiteColor bg-whiteColor lg:items-center space-y-10 lg:flex gap-10">
             <div className="lg:w-1/3">
-                <p className="text-4xl font-bold text-grey tracking-wider leading-snug">IT COMPANY</p>
-                <p className="text-textColor2 text-sm">Welcome to our IT company, where we are dedicated to empowering businesses with transformative technology solutions for your businesses.</p>
+                <p className="text-4xl font-bold text-grey tracking-wider leading-snug">REGULAR PAGES</p>
+                <p className="text-textColor2 text-sm">Welcome to REGULAR PAGES, where we are dedicated to empowering businesses with transformative technology solutions for your businesses.</p>
             </div>
             <div className="text-grey flex flex-col space-y-10 lg:w-1/3">
                 <p className="text-green text-2xl font-bold">SUBSCRIBE TO OUR NEWSLETTER</p>
@@ -80,11 +80,11 @@ export default function Details() {
             </div>
             <div className="text-grey space-y-2 lg:flex lg:flex-col lg:justify-end lg:w-1/3">
                 <p className="font-bold flex text-2xl">
-                    <span><PhoneIcon width={30} height={30} className="mr-5" /></span>
-                    061 012 1251
+                    <span><a href={`tel:0676403372`}><PhoneIcon width={30} height={30} className="mr-5" /></a></span>
+                    067 640 3372
                 </p>
                 <p className="font-bold flex text-2xl">
-                    <Email width={30} height={30} className="mr-5" />regularpages.com
+                    <Email width={30} height={30} className="mr-5" />regularpages5@gmail.com
                 </p>
                 <div className="flex">
                     <Location width={30} height={30} className="text-green mr-5" />
