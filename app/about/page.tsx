@@ -6,6 +6,7 @@ import Team from "../components/Team";
 import Modal from "../components/form/Modal";
 import Head from "next/head"
 import { Metadata } from "next";
+import Form from "../components/Form";
 
 
 export const metadata : Metadata={
@@ -31,6 +32,7 @@ export default function About(){
             <AboutUsHome />
             <Team value={true} />
             <Help />
+            <Form />
             <Details />
         </main>
         </>

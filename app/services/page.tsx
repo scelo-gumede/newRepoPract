@@ -6,6 +6,7 @@ import Services from "../components/Services"
 import Modal from "../components/form/Modal";
 import Head from "next/head";
 import { Metadata } from "next";
+import Form from "../components/Form";
 
 export const metadata:Metadata={
     title:"Comprehensive Website development,SEO & Digital Marketing Solutions",
@@ -28,6 +29,7 @@ export default function Service(){
             <Modal />
             <Services />
             <Benefits />
+            <Form />
             <Details />
         </main>
         </>
