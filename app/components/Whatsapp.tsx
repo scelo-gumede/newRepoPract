@@ -1,7 +1,7 @@
 import WhatsappPic from "@/app/assets/whatsapp.svg";
 
 export default function Whatsapp() {
-    const number: string = "0676403372";
+    const number: string = "+27676403372";
     const whatsappURL = `https://wa.me/${number}`
 
     return (

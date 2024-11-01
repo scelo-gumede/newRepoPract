@@ -11,7 +11,7 @@ export default function Form() {
       <div className="lg:w-[40vw] space-y-5 mx-auto">
       <p className="text-4xl font-bold tracking-wider leading-snug">SEND US A MESSAGE</p>
         <Box className="flex justify-center text-center flex-col space-y-10">
-          <TextField variant="outlined" type="text" size="small" label="first-name" />
+          <TextField variant="outlined" type="text"  label="first-name" />
           <TextField variant="outlined" type="text" label="last-name" />
           <TextField variant="outlined" type="email" label="email" />
           <TextField variant="outlined" type="text" label="subject" />
