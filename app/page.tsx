@@ -48,7 +48,7 @@ export default function Home(){
     <main>
       <Modal />
       <Hero />
-      <AboutUsHome />
+      <AboutUsHome value={true}/>
       <ItSolution />
       <OurPortfolio />
       <Recognition />

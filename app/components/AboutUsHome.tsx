@@ -2,8 +2,11 @@
 import Button from "./Button"
 import About from "@/app/assets/monitors.svg"
 
+interface ButtonShow{
+    value:boolean
+}
 
-export default function AboutUsHome(){
+export default function AboutUsHome(props:ButtonShow){
 
     return (
         <section className=" gradientAboutHome  text-black py-20 px-8 md:px-16 lg:px-32 lg:flex  ">
@@ -15,7 +18,9 @@ export default function AboutUsHome(){
                 <p className="text-sm">
                 With a team of skilled professionals and a passion for excellence, we strive to empower businesses with advanced digital solutions that drive growth, efficiency, and success. With a strong commitment to customer satisfaction, we work closely with our clients to understand their unique needs and deliver tailored IT solutions that exceed expectations. Trust us to be your reliable partner in navigating the ever-evolving technology landscape and unlocking the full potential of your business.</p>
                 <div className="flex justify-start">
-                <Button text="Learn more" color={true} bg="grey" />
+                {props.value && (
+                    <Button text="Learn more" color={true} bg="grey" />
+                )}
                 </div>
             </div>
 

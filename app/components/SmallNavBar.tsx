@@ -48,7 +48,7 @@ export default function SmallNavBar(){
             })}
 
             <div className="flex justify-center">
-                <button onClick={handleClick} className="px-4 py-2 font-medium text-textColor2 rounded-2xl border-grey border-2 border-solid">Contact Us</button>
+                <button onClick={handleClick} className="px-4 py-2 font-medium text-textColor2 rounded-2xl border-grey border-2 border-solid">Get Quote</button>
             </div>
         </section>
     )

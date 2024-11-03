@@ -29,7 +29,7 @@ export default function About(){
         </Head>
         <main>
             <Modal />
-            <AboutUsHome />
+            <AboutUsHome value={false} />
             <Team value={true} />
             <Help />
             <Form />
