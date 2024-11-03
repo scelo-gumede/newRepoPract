@@ -10,7 +10,6 @@ interface EachTeamMemberProps{
     name:string,
     occupation:string,
     Images:React.FC<React.SVGProps<SVGSVGElement>>,
-    text:string,
     value:boolean
     
 }
@@ -61,7 +60,7 @@ export default function Team(props:TeamProps){
 
 function EachTeamMember(props:EachTeamMemberProps){
 
-    const{occupation,name,Images,text,value}=props
+    const{occupation,name,Images,value}=props
     return(
         <article  className="shadow-lg rounded-lg bg-white overflow-hidden">
 
@@ -88,7 +87,7 @@ function EachTeamMember(props:EachTeamMemberProps){
                 </div>
                 <p className="text-sm font-bold">{occupation}</p>
 
-                <p className="text-sm">{value ? <span>{text}</span> : <span>{`${text.slice(0,100)}...`}</span>}</p>
+                
             </div>
         </article>
     )

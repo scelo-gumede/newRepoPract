@@ -1,4 +1,5 @@
-
+"use client"
+import Link from "next/link"
 import Button from "./Button"
 import About from "@/app/assets/monitors.svg"
 
@@ -19,7 +20,7 @@ export default function AboutUsHome(props:ButtonShow){
                 With a team of skilled professionals and a passion for excellence, we strive to empower businesses with advanced digital solutions that drive growth, efficiency, and success. With a strong commitment to customer satisfaction, we work closely with our clients to understand their unique needs and deliver tailored IT solutions that exceed expectations. Trust us to be your reliable partner in navigating the ever-evolving technology landscape and unlocking the full potential of your business.</p>
                 <div className="flex justify-start">
                 {props.value && (
-                    <Button text="Learn more" color={true} bg="grey" />
+                    <Link href={"about"}><Button text="Learn more" color={true} bg="grey" /></Link>
                 )}
                 </div>
             </div>

@@ -79,37 +79,37 @@ export const teamMembers = [
         name:"John Smith",
         occupation:"SEO Expect",
         Images:Charlse,
-        text:"John Smith is an SEO expert with over a decade of experience in digital marketing. He specializes in optimizing website performance, enhancing organic search visibility, and driving targeted traffic."
+        
     },
     {
         name:"Thomas Gumede",
         occupation:"Programmer",
         Images:Thomas,
-        text:"Thomas Gumede is a talented web developer with a strong background in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and PHP, he blends technical proficiency with a flair for design. "
+       
     },
     {
         name:"Amanda Khali",
         occupation:"Web Designer",
         Images:Amanda,
-        text:"Amanda Khali is a creative web designer with a passion for crafting visually stunning and user-friendly websites. With expertise in design tools like Adobe XD and Figma, she creates intuitive layouts that enhance user experience."
+       
     },
     {
         name:"John Smith",
         occupation:"SEO Expect",
         Images:Charlse,
-        text:"John Smith is an SEO expert with over a decade of experience in digital marketing. He specializes in optimizing website performance, enhancing organic search visibility, and driving targeted traffic. "
+        
     },
     {
         name:"Thomas Gumede",
         occupation:"Programmer",
         Images:Thomas,
-        text:"Thomas Gumede is a talented web developer with a strong background in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and PHP, he blends technical proficiency with a flair for design. "
+        
     },
     {
         name:"Amanda Khali",
         occupation:"Web Designer",
         Images:Amanda,
-        text:"Amanda Khali is a creative web designer with a passion for crafting visually stunning and user-friendly websites. With expertise in design tools like Adobe XD and Figma, she creates intuitive layouts that enhance user experience. "
+        
     }
 ]
 
