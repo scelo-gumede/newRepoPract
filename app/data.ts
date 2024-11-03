@@ -83,7 +83,7 @@ export const teamMembers = [
     },
     {
         name:"Thomas Gumede",
-        occupation:"Programmer",
+        occupation:"Senior Developer",
         Images:Thomas,
        
     },
@@ -94,23 +94,12 @@ export const teamMembers = [
        
     },
     {
-        name:"John Smith",
-        occupation:"SEO Expect",
+        name:"Abdul Khan",
+        occupation:"Wordpress Expect",
         Images:Charlse,
         
     },
-    {
-        name:"Thomas Gumede",
-        occupation:"Programmer",
-        Images:Thomas,
-        
-    },
-    {
-        name:"Amanda Khali",
-        occupation:"Web Designer",
-        Images:Amanda,
-        
-    }
+    
 ]
 
 export const achievements =[
