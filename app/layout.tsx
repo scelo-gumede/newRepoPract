@@ -6,6 +6,7 @@ import SmallNavBar from "./components/SmallNavBar";
 import NavBarConf from "./components/NavBarConf";
 import { Metadata } from "next";
 import Whatsapp from "./components/Whatsapp";
+import Head from "next/head";
 
 
 export const metadata:Metadata = {
@@ -38,7 +39,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
       <Provider >
       <html style={{scrollBehavior:"smooth"}} lang="en">
-            
+          <Head>
+          <meta name="msvalidate.01" content="CF926693516941D2542C86EFAA6D8262" />
+          </Head>
           <body className="relative">
                
                 <Whatsapp />

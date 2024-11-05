@@ -32,7 +32,7 @@ export default function Home(){
 
                 <meta name="keywords" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
 
-
+                <meta name="msvalidate.01" content="CF926693516941D2542C86EFAA6D8262" />
                 <meta property="og:title" content="RegularPages: Where Web Development Meets Innovation" />
                 <meta property="og:description" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
                 <meta property="og:url" content="https://regularpages.com" />
