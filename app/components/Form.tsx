@@ -3,6 +3,9 @@ import {  TextField } from "@mui/material";
 import z from "zod"
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
+import emailjs from "emailjs-com";
+
 
 const schema = z.object({
   firstName:z.string().min(2).max(50),
@@ -14,9 +17,32 @@ const schema = z.object({
 
 export default function Form() {
   const{handleSubmit,register,formState:{errors}}=useForm({resolver:zodResolver(schema)})
+  const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
 
-  const handleData = (data:any)=>{
-    console.log(data)
+
+  const handleData =async (data:any)=>{
+    setLoading(true);
+        setError("");
+
+        try {
+          await emailjs.send("service_9ck17hp", "template_ikkwjgi", {
+              from_name: "message query",
+              to_name: "Me for message",
+              message: `${data.message}`,
+              reply_to: `${data.email}`,
+          });
+          
+      } catch (err) {
+          if (err instanceof z.ZodError) {
+              setError(err.errors.map(e => e.message).join(", "));
+          } else {
+              setError("Failed to send email. Please try again.");
+          }
+      } finally {
+          setLoading(false);
+      }
+
   }
 
   return (
