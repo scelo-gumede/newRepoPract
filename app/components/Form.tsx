@@ -2,7 +2,7 @@
 
 import { TextField } from "@mui/material";
 import z from "zod";
-import { useForm } from "react-hook-form";
+import { useForm,SubmitHandler} from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import emailjs from "emailjs-com";
@@ -22,11 +22,11 @@ interface schemaProps {
 }
 
 export default function Form() {
-  const { handleSubmit, register, formState: { errors } } = useForm({ resolver: zodResolver(schema) });
+  const { handleSubmit, register, formState: { errors } } = useForm<schemaProps>({ resolver: zodResolver(schema) });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleData = async (data: schemaProps) => {
+  const handleData:SubmitHandler<schemaProps> = async (data: schemaProps) => {
     setLoading(true);
     setError("");
 
