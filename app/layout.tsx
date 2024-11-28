@@ -7,6 +7,7 @@ import NavBarConf from "./components/NavBarConf";
 import { Metadata } from "next";
 import Whatsapp from "./components/Whatsapp";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 export const metadata:Metadata = {
@@ -49,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <SmallNavBar />
                 <NavBarConf />
                 {children}
+                <SpeedInsights />
                 <Footer />
           </body>
       </html>
