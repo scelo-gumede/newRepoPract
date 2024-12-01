@@ -1,5 +1,4 @@
 
-import AI from "@/app/assets/AI.svg"
 import cloud from "@/app/assets/cloud-computing.svg"
 import security from "@/app/assets/security.svg"
 import software from "@/app/assets/software-dev.svg"
@@ -23,6 +22,9 @@ import Charlse from "@/app/assets/charlse.svg"
 import General from "./components/form/Form1"
 import ProjectDetails from "./components/form/Form2"
 import Information from "./components/form/Form3"
+import UI from "@/app/assets/UI.svg"
+import Search from "@/app/assets/search.svg"
+import Design from "@/app/assets/design.svg"
 
 
 export const form=[
@@ -45,8 +47,8 @@ export const benefit =[
         icon:dollar
     },
     {
-        label:"affordable rates",
-        icon:dollar
+        label:"User-Centric Design",
+        icon:Design
     }
 ]
 
@@ -77,38 +79,27 @@ export const teamMembers = [
         name:"John Smith",
         occupation:"SEO Expect",
         Images:Charlse,
-        text:"John Smith is an SEO expert with over a decade of experience in digital marketing. He specializes in optimizing website performance, enhancing organic search visibility, and driving targeted traffic."
+        
     },
     {
         name:"Thomas Gumede",
-        occupation:"Programmer",
+        occupation:"Senior Developer",
         Images:Thomas,
-        text:"Thomas Gumede is a talented web developer with a strong background in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and PHP, he blends technical proficiency with a flair for design. "
+       
     },
     {
         name:"Amanda Khali",
         occupation:"Web Designer",
         Images:Amanda,
-        text:"Amanda Khali is a creative web designer with a passion for crafting visually stunning and user-friendly websites. With expertise in design tools like Adobe XD and Figma, she creates intuitive layouts that enhance user experience."
+       
     },
     {
-        name:"John Smith",
-        occupation:"SEO Expect",
+        name:"Abdul Khan",
+        occupation:"Wordpress Expect",
         Images:Charlse,
-        text:"John Smith is an SEO expert with over a decade of experience in digital marketing. He specializes in optimizing website performance, enhancing organic search visibility, and driving targeted traffic. "
+        
     },
-    {
-        name:"Thomas Gumede",
-        occupation:"Programmer",
-        Images:Thomas,
-        text:"Thomas Gumede is a talented web developer with a strong background in creating dynamic and responsive websites. Skilled in HTML, CSS, JavaScript, and PHP, he blends technical proficiency with a flair for design. "
-    },
-    {
-        name:"Amanda Khali",
-        occupation:"Web Designer",
-        Images:Amanda,
-        text:"Amanda Khali is a creative web designer with a passion for crafting visually stunning and user-friendly websites. With expertise in design tools like Adobe XD and Figma, she creates intuitive layouts that enhance user experience. "
-    }
+    
 ]
 
 export const achievements =[
@@ -143,14 +134,19 @@ export const skills = [
         icon:cloud
     },
     {
-        title:"Crypto Currency",
-        text:"Protect your digital assets and sensitive data from evolving cyber threats. Our comprehensive cybersecurity services include vulnerability assessments, penetration testing, network security, data encryption, and employee training.",
+        title:"Cyber Crime",
+        text:"Our dedicated cybersecurity team protects your business from cyber threats with comprehensive strategies. From risk assessments to incident response, we ensure your data and assets remain secure.",
         icon:security
     },
     {
-        title:"Artificial Intelligence",
-        text:"Unlock the potential of AI to gain valuable insights and drive intelligent automation. Our AI services encompass machine learning, natural language processing, computer vision, and predictive analytics.",
-        icon:AI
+        title:"Search Engine Optimization",
+        text:"Our skilled SEO team enhances your online visibility with tailored strategies. From keyword research to on-page optimization, we drive organic traffic and boost your search rankings.",
+        icon:Search
+    },
+    {
+        title:"UI/XI Design",
+        text:"Our expert UI/UX team designs user-centric interfaces that elevate your brand and enhance user engagement. From wireframes to prototypes, we create seamless experiences tailored to your needs.",
+        icon:UI
     }
 ]
 

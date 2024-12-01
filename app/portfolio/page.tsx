@@ -3,10 +3,18 @@ import Details from "../components/Details";
 import PortFolio from "../components/PortFolio";
 import Modal from "../components/form/Modal";
 import Head from "next/head";
+import { Metadata } from "next";
+import Form from "../components/Form";
+
+
+export const metadata:Metadata={
+      title: "Proven Results in Digital Marketing,Website develpment & SEO",
+      description: "Explore our portfolio at Regular Pages, featuring successful projects in Website development,SEO and digital marketing. Discover how we’ve helped businesses like yours achieve their goals through tailored strategies and innovative solutions. Let our work speak for itself."
+
+      
+}
 
 export default function Portfolio(){
-    
-
     return (
         <>
         <Head>
@@ -18,6 +26,7 @@ export default function Portfolio(){
         <main>
             <Modal />
             <PortFolio />
+            <Form />
             <Details />
         </main>
     

@@ -9,6 +9,18 @@ import OurPortfolio from "./components/OurPortfolio"
 import Recognition from "./components/Recognitions"
 import Team from "./components/Team"
 import Head from "next/head"
+import { Metadata } from "next"
+
+
+export const metadata: Metadata={
+  title: {
+    default: "Regular Pages - Your Digital Marketing Experts",
+    template: "%s - Regular Pages | Transforming Your Online Presence",
+  },
+  description: "At Regular Pages, we specialize in tailored Website development,SEO and digital marketing solutions that drive traffic, increase engagement, and boost conversions. Let us help you elevate your brand and achieve your business goals in the digital landscape."
+
+  
+}
 
 
 export default function Home(){
@@ -20,7 +32,7 @@ export default function Home(){
 
                 <meta name="keywords" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
 
-
+                <meta name="msvalidate.01" content="CF926693516941D2542C86EFAA6D8262" />
                 <meta property="og:title" content="RegularPages: Where Web Development Meets Innovation" />
                 <meta property="og:description" content="software development, website design, web development, digital marketing, SEO, custom software solutions, online presence, small business technology, innovative web solutions, technology consulting" />
                 <meta property="og:url" content="https://regularpages.com" />
@@ -36,7 +48,7 @@ export default function Home(){
     <main>
       <Modal />
       <Hero />
-      <AboutUsHome />
+      <AboutUsHome value={true}/>
       <ItSolution />
       <OurPortfolio />
       <Recognition />

@@ -33,19 +33,19 @@ export default function Navbar(props:NavBarProps){
                     <Logo  width="100%" height="auto"/>
                 </div>
                 </Link>
-                <p className="font-bold text-white">IT COMPANY</p>
+                <p className="font-bold text-white">REGULAR PAGES</p>
                 </div>
 
                 <div className="space-x-5 items-center hidden lg:flex text-xl ">
                     {links.map((link,i)=>{
                         return (
-                            <Link  className={clsx({
-                                "text-green":pathname==link.url,
+                            <Link  className={clsx(" transition duration-300 ",{
+                                "text-green border-b-white border-b-4 border-b-solid ":pathname==link.url,
                                 "text-white":props.color==true
                             })} key={i} href={link.url}>{link.label}</Link>
                         )
                     })}
-                    <Button func={showModal} text="Contact Us" bg="white" color={props.color} />
+                    <Button func={showModal} text="Get Quote" bg="white" color={props.color} />
                 </div>
 
                 

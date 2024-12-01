@@ -31,9 +31,11 @@
   );
 }
 
+
 .no-scroll {
   overflow: hidden;
 }
+ 
 
 /* styles.css or your global stylesheet */
 .custom-menu-icon {
