@@ -12,6 +12,11 @@
   opacity: 0.7;
 }
 
+/*
+ body * {
+  outLine:1px red solid
+}
+*/
 
 .gradientHero {
   background-image: linear-gradient(

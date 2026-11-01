@@ -9,7 +9,9 @@ export default function Hero(){
 
 
     return(
-        <section className="gradientHero flex flex-col-reverse md:flex-col lg:flex-row text-white px-10 md:px-16 py-20 lg:pb-28 lg:flex  ">
+        <section className="gradientHero  grid justify-center ">
+
+            <div className="max-w-screen-xl flex flex-col-reverse md:flex-col lg:flex-row text-white px-10 md:px-16 py-20 lg:pb-28 lg:flex ">
 
             <div className="space-y-5   lg:w-[50vw]">
                 <p className="md:text-7xl text-5xl font-bold tracking-wider leading-tight ">EMPOWERING<br /> BUSINESSES WITH <br /> TECHNOLOGY</p>
@@ -25,7 +27,7 @@ export default function Hero(){
                 
                 />
             </div>
-            
+            </div>
         </section>
     )
 }

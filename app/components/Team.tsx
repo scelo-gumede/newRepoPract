@@ -21,7 +21,9 @@ interface TeamProps{
 export default function Team(props:TeamProps){
 
     return (
-        <section className="px-8 md:px-16 py-24  space-y-10 bg-whiteColor" >
+        <section className="grid justify-center bg-whiteColor" >
+
+            <div className=" max-w-screen-xl px-8 md:px-16 py-24  space-y-10">
             <div>
                 <p className="text-4xl font-bold text-center md:text-left leading-snug">MEET OUR EXPERTS</p>
                 <div className="w-[20vw] mx-auto md:mx-0 lg:w-[10vw] h-1 bg-green rounded-md   mb-8"></div>
@@ -51,6 +53,7 @@ export default function Team(props:TeamProps){
                     })
                 )
         }
+            </div>
             </div>
         </section>
     )

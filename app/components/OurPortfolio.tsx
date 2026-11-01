@@ -4,7 +4,8 @@ import PortFolioCart from "./PortfolioCart"
 export default function OurPortfolio(){
 
     return (
-        <section className="py-16 px-8 md:px-16 bg-whiteColor">
+        <section className=" bg-whiteColor grid justify-center">
+            <div className=" py-16 px-8 md:px-16 max-w-screen-xl">
             <p className="text-4xl text-center mt-5 font-bold tracking-wider leading-snug">OUR PORTFOLIO</p>
             <div className="w-[20vw] lg:w-[10vw] h-1 bg-green rounded-md mx-auto  mb-10"></div>
             <div className="flex flex-col lg:flex-row  lg:flex  gap-10">
@@ -13,6 +14,7 @@ export default function OurPortfolio(){
                     <PortFolioCart {...port} key={i}/>
                 )
             })}
+            </div>
             </div>
         </section>
     )

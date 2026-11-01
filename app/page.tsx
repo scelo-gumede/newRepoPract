@@ -45,7 +45,7 @@ export default function Home(){
               <meta name="twitter:image" content="https://regularpages.com/opengraph-image.png" />
 
     </Head>
-    <main>
+    <main className="">
       <Modal />
       <Hero />
       <AboutUsHome value={true}/>
